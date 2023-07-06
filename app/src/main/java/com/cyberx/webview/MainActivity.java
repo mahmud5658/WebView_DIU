@@ -28,4 +28,10 @@ public class MainActivity extends AppCompatActivity {
 
         webSettings.setJavaScriptEnabled(true);
     }
+
+    public void onBackPressed(){
+        if(webView.canGoBack()){
+            webView.goBack();
+        }
+    }
 }
